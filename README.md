@@ -1,6 +1,6 @@
 # Framer Motion
 
-This is my personal Framer Motion practice.
+This is my [Framer Motion](https://www.framer.com/motion/) practice repo.
 
 Follow the below steps if you want to play with the code base.
 
