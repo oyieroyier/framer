@@ -4,6 +4,7 @@ import ShapeShifting from "./components/ShapeShifting";
 import HoverAndTap from "./components/HoverAndTap";
 import DraggingAnimation from "./components/DraggingAnimation";
 import ScrollProgressionAnimation from "./components/ScrollProgressionAnimation";
+import AnimateText from "./components/AnimateText";
 
 const staggerAnimation = {
   hidden: { opacity: 0 }, // Make the section hidden. The property names can be anything, as long as they is used in the initial and animate attributes.
@@ -45,6 +46,7 @@ export default function App() {
           className="flex aspect-square items-center justify-center gap-10 rounded-lg bg-slate-800"
         ></motion.div>
       </motion.section>
+      <AnimateText />
     </div>
   );
 }
