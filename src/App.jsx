@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import FadeUpBox from "./components/FadeUpBox";
 import ShapeShifting from "./components/ShapeShifting";
+import HoverAndTap from "./components/HoverAndTap";
 
 const staggerAnimation = {
   hidden: { opacity: 0 }, // Make the section hidden. The property names can be anything, as long as they is used in the initial and animate attributes.
@@ -34,10 +35,7 @@ export default function App() {
 				 */}
         <FadeUpBox variants={fadeAnimation} />
         <ShapeShifting variants={fadeAnimation} />
-        <motion.div
-          variants={fadeAnimation}
-          className="flex aspect-square items-center justify-center gap-10 rounded-lg bg-slate-800"
-        ></motion.div>
+        <HoverAndTap variants={fadeAnimation} />
         <motion.div
           variants={fadeAnimation}
           className="flex aspect-square items-center justify-center gap-10 rounded-lg bg-slate-800"
