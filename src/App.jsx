@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import FadeUpBox from "./components/FadeUpBox";
+import ShapeShifting from "./components/ShapeShifting";
 
 const staggerAnimation = {
   hidden: { opacity: 0 }, // Make the section hidden. The property names can be anything, as long as they is used in the initial and animate attributes.
@@ -26,16 +27,13 @@ export default function App() {
         variants={staggerAnimation}
         initial="hidden" // Which of the variants do you want the page to load with
         animate="visible" // What state in the variants object should the page be in when the animation is done
-        className="grid grid-cols-3 gap-10 p-10"
+        className="grid gap-10 p-10 md:grid-cols-2 lg:grid-cols-3"
       >
         {/*
 				  	For each child, we don't need the initial and animate properties because in Framer, they inherit the behavior from the parent.
 				 */}
         <FadeUpBox variants={fadeAnimation} />
-        <motion.div
-          variants={fadeAnimation}
-          className="flex aspect-square items-center justify-center gap-10 rounded-lg bg-slate-800"
-        ></motion.div>
+        <ShapeShifting variants={fadeAnimation} />
         <motion.div
           variants={fadeAnimation}
           className="flex aspect-square items-center justify-center gap-10 rounded-lg bg-slate-800"
