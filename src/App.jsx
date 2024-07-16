@@ -25,7 +25,7 @@ const fadeAnimation = {
 
 export default function App() {
   return (
-    <div className="flex flex-col gap-10 overflow-x-hidden">
+    <div className="flex flex-col p-4 lg:p-8 gap-10 overflow-x-hidden">
       {/* motion.section tells your application that this section will be animated */}
       <motion.section
         variants={staggerAnimation}
